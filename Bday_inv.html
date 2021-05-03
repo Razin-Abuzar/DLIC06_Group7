@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Birthday_Invitation_Form</title>
+    <link rel="stylesheet" href="informal.css">
+    <script src="bday_inv.js"></script>
+
+  </head>
+  <body>
+
+    <div id="box">
+
+      <div class="empty" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img id="image1" src="birthday-image1.jpeg" draggable="true" ondragstart="drag(event)" width="150" height="150">
+      </div>
+      <br/>
+
+      <div class="empty" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img id="image2" src="birthday-image2.jpeg" draggable="true" ondragstart="drag(event)" width="150" height="150">
+      </div>
+      <br/>
+
+      <div class="empty" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img id="image3" src="birthday-image3.jpeg" draggable="true" ondragstart="drag(event)" width="150" height="150">
+      </div>
+      <br/>
+
+      <div id="card">
+        <div id="image">
+          <p><div class="empty_card" ondrop="drop(event)" ondragover="allowDrop(event)"></div></p>
+        </div>
+        <div id="content">
+          <h3>Form to attend my<br/>BIRTHDAY PARTY!</h3>
+          <p>
+            <form>
+              <p><label>Name</label></p>
+              <input type="text" placeholder="No More than 60 Characters" maxlength="60"/><br/>
+              <p><label>Email</label></p>
+              <input type="email"></input>
+              <p><label>Amount of People Attending</label></p>
+              <input type="number" min="0" max="5"></input>
+              <p><button type="submit">Submit</button>            <button type="reset">Reset</button></p>
+            </form>
+
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="Practice.js"></script>
+  </body>
+</html>

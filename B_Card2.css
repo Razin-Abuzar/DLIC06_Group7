@@ -1,0 +1,92 @@
+body{
+  background: url("workoffice3.jpeg") no-repeat;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+  height: 100px;
+  margin: 0;
+  overflow: scroll;
+  font-style: italic;
+}
+
+.container{
+  display: inline-flex;
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.card{
+  background: silver;
+  border-radius: 7px;
+  height: 540px;
+  width: 300px;
+  box-shadow:2px;
+  margin: 10px;
+}
+
+.card-image{
+  height: 150px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+#one{
+  display: inline-flex;
+  width: 200px;
+  height: 150px;
+  top: 70px;
+}
+
+button{
+  font-weight: bold;
+}
+
+textarea{
+  font-style: italic;
+}
+
+h1{
+  font-size: 2em;
+  font-style: italic;
+  font-weight: lighter;
+  font-family: sans-serif;
+  text-decoration: underline;
+}
+
+.submit:hover{
+  background-color: green;
+}
+
+.submit:active{
+  background-color: cyan;
+}
+
+.submit:visited{
+  background-color: lime;
+}
+.reset:hover{
+  background-color: red;
+}
+
+.reset:active{
+  background-color: yellow;
+}
+
+.reset:visited{
+  background-color: purple;
+}
+
+@media(max-width:1300px){
+  body{
+    background: url("workoffice3.jpg") no-repeat;
+    background-size: cover;
+    place-items: center;
+    height: 700px;
+    margin: 0;
+    overflow: scroll;
+    font-style: italic;
+  }
+}

@@ -1,0 +1,63 @@
+body{
+  background: url("Background_Wood.jpeg") no-repeat;
+  background-size: cover;
+  align-items: center;
+}
+
+#image1{
+  background-image: url('Birthday_Wish1.jpeg') ;
+  background-size: cover;
+}
+
+#image2{
+  background-image: url('Birthday_Wish2.jpeg') ;
+  background-size: cover;
+}
+
+#image3{
+  background-image: url('Birthday_Wish3.jpeg') ;
+  background-size: cover;
+}
+
+#image4{
+  background-image: url('Birthday_Image4.jpeg') ;
+  background-size: cover;
+}
+
+.empty{
+display: inline-block;
+height: 330px;
+width: 300px;
+margin:5px;
+border: 3px solid;
+background-color: white;
+}
+
+.container{
+
+  display: ;
+  height: 550px;
+  width: 500px;
+  border: 5px solid black;
+  background-color: lavender;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.letter{
+  text-align: center;
+  font-style: italic;
+}
+
+.empty_card{
+  text-align: center;
+  height: 330px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  border: 3px solid;
+  background-color: white;
+}

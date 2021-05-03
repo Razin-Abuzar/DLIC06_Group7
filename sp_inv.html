@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width"/>
+		<meta name="description" content="E-Invitation"/>
+		<meta name="keywords" content="invitation, interview">
+		<meta name="author" content="Razin, Rusyaidi, Safwan"/>
+		<title>Invitation Generator | Services</title>
+		<link rel="stylesheet" href="style.css" type="text/css" />
+		<script type="text/javascript" src="script.js"></script>
+		<style>
+	</style>
+	<script>
+	function allowDrop(ev) {
+  	ev.preventDefault();
+	}
+
+	function drag(ev) {
+  	ev.dataTransfer.setData("text", ev.target.id);
+	}
+
+	function drop(ev) {
+  	ev.preventDefault();
+  	var data = ev.dataTransfer.getData("text");
+  	ev.target.appendChild(document.getElementById(data));
+	}
+	</script>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div id="branding">
+					<h1>Invitation <span class="highlight">Generator</span></h1>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li class="current"><a href="services.html">Services</a></li>
+						<li><a href="contactus.html">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+				<section id="main">
+					<div class="container">
+						<article id="main-col">
+							<h4><a href="formal.html">&#8592; Previous Page</a></h4>
+            	<h1 class="page-title">Formal Invitation | Wedding</h1>
+							<p>The designs for the templates are provided below the template</p>
+          	</article>
+					</div>
+				</section>
+				<div class="container">
+					<div class="container1">
+						<div class="dark">
+									<label>Inviter:</label>&rarr;<button onclick="ubahNamaA()" id="Btn">Click</button><br/>
+		      				<input type="text" placeholder="Miguel" id="form_mn"/><p id="form_mn">&amp;</p>
+
+									<label>Invitee:</label>&rarr;<button onclick="ubahNamaB()">Click</button><br/>
+		      				<input type="text" placeholder="Angela" id="form_fn"/><br/>
+
+									<label>Message:</label>&rarr;<button onclick="bagiMessage()">Click</button><br/>
+		      				<textarea rows="7.5" placeholder="(Click enter when filling in the message to make sure the text doesn't go out of frame)" cols="40" id="form_mes"></textarea><br/>
+
+									<label>Location:</label>&rarr;<button onclick="manaLoc()">Click</button><br/>
+		      				<textarea rows="6" placeholder="(Click enter when filling in the message to make sure the text doesn't go out of frame)" cols="40" id="form_loc"></textarea><br/>
+
+									<label>Date(s):</label>&rarr;<button onclick="theDate()">Click</button><br/>
+		      				<input type="date" id="form_date"/><br/>
+
+									<p>Color Picker:</p><input type="color" value="#BDBDBD" id="form_col"><br/>
+						</div>
+					</div>
+					<div class="container2">
+						<div class="design">
+							<div id="box_col2">
+			        	<label for="colorPicker">
+									<div id="des_col">
+									<p style="font:20px; text-align:center">From:</p>
+									<p id="appear1">Inviter</p><br/><br/>
+									<p style="font:20px; text-align:center">To:</p>
+									<p id="appear2">Invitee</p>
+									<div id="appear3_box">
+										<p id="appear3">Give a message to your invitees</p><br/><br/><br/>
+									</div>
+									<p id="appear4">Specify where the event is being held</p><br/><br/><br/>
+									<p id="appear5">When is the event going to be held?</p>
+								</div>
+								</label>
+						<script>
+			        let colorPicker = document.getElementById("form_col");
+			        let box = document.getElementById("box_col2");
+			        let output = document.getElementById("appear6");
+
+			        box.style.backgroundColor = colorPicker.value;
+
+			        colorPicker.addEventListener("input", function(event){
+			        box.style.backgroundColor = event.target.value;
+			      }, false);
+			      </script>
+						</div>
+					</div>
+				</div>
+				<button onclick="myFunction()" style="float:right">Save</button>
+			</div>
+        <footer>
+          <p>Made by Razin, Rusyaidi and Safwan, Copyright &copy; 2021</p>
+        </footer>
+  </body>
+</html>
